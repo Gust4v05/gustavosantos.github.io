@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meuStyle -->
+    <link rel="stylesheet" href="/resource/css/style.css">
+    <!-- media -->
+    <link rel="stylesheet" href="/resource/css/media.css">
+    <!-- boxIcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- meuStyle -->
+    <link rel="stylesheet" href="/resource/css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html#home" class="logo">
+                <i class='bx bx-ghost bx-tada'></i>
+                <span>Enxame</span>
+            </a>
+            <ul class="navbar">
+                <li><a href="index.html#home">início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li>
+                    <a>especialidades<i class="bx bxs-chevron-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="index.html#emphasis">emphasis</a></li>
+                        <li><a href="index.html#products">produtos</a></li>
+                        <li><a href="index.html#services">serviços</a></li>
+                        <li><a href="index.html#domain">dominio</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#localization">localização</a></li>
+                <li><a href="index.html#contact">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login">
+            <ul class="login-escrita">
+                <form method="post">
+                    <li>
+                        <h4>Login</h4>
+                    </li>
+                    <li>
+                        <p>Autenticador</p>
+                    </li>
+                    <li>
+                        <input type="text" id="name" placeholder="Login" name="name" autocomplete="off" autofocus required>
+                    </li>
+                    <li>
+                        <input type="password" id="password" placeholder="Senha" name="password" maxlength="6" autocomplete="off" required>
+                    </li>
+                    <li class="botao">
+                        <input type="submit" class="btnDefault" value="Submit"
+                        onclick="login(); return false">
+                        <input type="reset" class="btnDefault" value="Cancel">
+                    </li>
+                    <li>
+                        <a href="#">Esqueci my senha</a>
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </main>
+
+    <Footer>
+        <div class="footer">
+            <ul>
+                <li><a href="index.html#home">home</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#emphasis">emphasis</a></li>
+                <li><a href="index.html#products">products</a></li>
+                <li><a href="index.html#services">services</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html#domain">domain</a></li>
+                <li><a href="index.html#localization">localization</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+            <a href="index.html#home" class="logo">
+                <i class='bx bx-ghost bx-flashing'></i>
+                <span>Enxame</span>
+            </a>
+            <h5>&copy; Copyright all rights reserved 2023</h5>
+        </div>
+    </Footer>
+
+    <!-- scripts -->
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- jqueryMask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- meuJs -->
+    <script src="/resource/js/script.js"></script>
+</body>
+
+</html>

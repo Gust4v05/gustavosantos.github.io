@@ -1,0 +1,215 @@
+/* 
+320px - 480px: dispositivos moveis
+481px - 768px: tablets, Ipads
+769px - 1024px: telas pequenas, laptops, tablets em paisagem
+1025px - 1200px: desktops
+1201px - 1600px: telas grandes widescreen
+1601px - a cima: TV e telas especificas
+*/
+
+@media screen and (max-width: 1024px) {
+    .btnMenu {
+        font-size: 50px;
+        padding: 10px;
+        color: white;
+        transition: .3s;
+        display: block;
+    }
+
+    .btnMenu:hover {
+        color: deepskyblue;
+        transition: .3s;
+    }
+
+    .logo {
+        width: 10%;
+        height: 70px;
+        line-height: 70px;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo i {
+        font-size: 60px;
+    }
+
+    .logo span {
+        font-size: 1.5em;
+        padding: 20px;
+        font-weight: 800;
+    }
+
+    .logo:hover {
+        color: rgba(218, 10, 190, 0.699);
+        transition: .5s;
+    }
+
+    /* #region navbar */
+    .navbar {
+        height: 70px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul.open {
+        overflow: visible;
+    }
+
+    .navbar li {
+        padding: 0 8px;
+    }
+
+    .navbar li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 20px 25px;
+    }
+
+    .navbar li a:hover:not(.sub a:hover) {
+        background-color: rgba(2, 250, 43, 0.726);
+    }
+
+    ul .sub {
+        position: absolute;
+        display: none;
+        min-height: 160px;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0;
+        text-align: center;
+
+        right: 150px;
+    }
+
+    /* #endregion */
+
+    /* #region products */
+    .cardProd {
+        width: 40%;
+    }
+
+    /* #endregion */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* #region home */
+
+    .home-Inner h1 {
+        font-size: 1.8em;
+    }
+
+    .home-Inner h2 {
+        font-size: 1.5em;
+    }
+
+    /* #endregion */
+
+    /* #region products */
+    .cardProd {
+        width: 40%;
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    .contact-inner li input[type=text],
+    .contact-inner li input[type=email],
+    .contact-inner li textarea {
+        width: 100%;
+    }
+
+    .formBtn {
+        width: 100%;
+    }
+
+
+    /* #endregion */
+
+
+    /* #region footer */
+    .footer-container a span {
+        display: none;
+    }
+
+    .footer-container a i {
+        font-size: 3.5rem;
+    }
+
+    /* #endregion */
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /* #region home */
+    .home-Inner {
+        padding-top: 2.8em;
+    }
+
+    .home-Inner h1 {
+        font-size: 1.2em;
+    }
+
+    .home-Inner h2 {
+        font-size: .8em;
+    }
+
+    /* #endregion */
+
+    /* #region products */
+    .cardProd {
+        width: 90%;
+    }
+
+    /* #endregion */
+
+
+    /* #region services */
+
+    .services-inner {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .services-inner table th {
+        font-size: 1.5em;
+    }
+
+    .services-inner table td {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+
+    /* #region domain */
+    .domain-container li input[type=text] {
+        width: 100%;
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    .contact-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* #endregion */
+
+    /* #region footer */
+
+    .footer-container ul {
+        display: none;
+    }
+
+    /* #endregion */
+
+}
